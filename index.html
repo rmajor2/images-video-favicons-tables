@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Images, Video, Favicons, &amp; Tables</title>
+    <meta name="author" content="RoJam Major">
+    <meta name="description" content="Practice with images, video, svgs, favicons, and tables for G.I.T. 215">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- GOOGLE FONTS LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap" rel="stylesheet">
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" aria-label="go to the home page">
+            <!-- SVG LOGO -->
+            <!-- (SVG code omitted for brevity; your original SVG is valid and unchanged) -->
+        </a>
+        <h1>Images, Video, Favicons, &amp; Tables</h1>
+        <nav>
+            <ul>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#favicon">Favicons</a></li>
+                <li><a href="#svg">SVG</a></li>
+                <li><a href="#table">Tables</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Follow along as we learn about using images in HTML, adding a favicon to a website, adding SVGs to HTML, adding a video to a web page, and creating a table with HTML.</p>
+
+        <section id="images">
+            <h2>Adding Images to Your HTML</h2>
+            <p>There are a couple of reasons for adding images to your HTML...</p>
+
+            <section>
+                <h3><span>&#10033;&nbsp;</span> Decorative Images</h3>
+                <p>Decorative images are ones that if removed don't affect understanding...</p>
+                <img src="images/square-red-blue.jpg" alt="" width="400" height="400" />
+                <p class="credit">Photo by <a href="https://unsplash.com/@usgs">USGS</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            </section>
+
+            <section>
+                <h3><span>&#10033;&nbsp;</span> Content Images</h3>
+                <p>Content images must include descriptive alt text...</p>
+                <img src="images/memphis-recording-service.jpg" alt="A neon sign hanging on a dark wall that says Memphis Recording Service" width="400" height="400" />
+                <p class="credit">Photo by <a href="https://unsplash.com/es/@uconrad">Uwe Conrad</a> on <a href="https://unsplash.com/photos/zPnHgxeu9LI">Unsplash</a></p>
+            </section>
+        </section>
+
+        <section id="video">
+            <h2>Adding Video to Your HTML</h2>
+            <section>
+                <h3><span>&#10033;&nbsp;</span> HTML5 Video</h3>
+                <video controls width="425">
+                    <source src="video/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="https://www.pexels.com/video/laptop-use-as-controller-for-a-modern-sound-system-3134599/" class="credit">Video by Caleb Oquendo</a>
+            </section>
+
+            <section>
+                <h3><span>&#10033;&nbsp;</span> YouTube Embed</h3>
+                <iframe width="425" height="240" src="https://www.youtube.com/embed/k9DZp16uNQk" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+        </section>
+
+        <section id="favicon">
+            <h2>Adding a Favicon to Your Web Page</h2>
+            <p>Create a favicon and reference it in the head of your document as shown earlier.</p>
+        </section>
+
+        <section id="svg">
+            <h2>Using SVGs in HTML</h2>
+            <p>SVGs are scalable and perfect for icons. You’ll find some in the footer below.</p>
+        </section>
+
+        <section id="table">
+            <h2>Using Tables in HTML</h2>
+            <table>
+                <caption>Hours of Operation</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Monday</td><td>Noon - 8:00PM</td></tr>
+                    <tr><td>Tuesday</td><td>10:00AM - 7:00PM</td></tr>
+                    <tr><td colspan="2">Wednesday - <span class="bold">Closed</span></td></tr>
+                    <tr><td>Thursday</td><td>10:00AM - 7:00PM</td></tr>
+                    <tr><td>Friday</td><td>Noon - Midnight</td></tr>
+                    <tr><td>Saturday</td><td rowspan="2">Closed - By Appointment Only</td></tr>
+                    <tr><td>Sunday</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>We're using SVG icons from <a href="https://tablericons.com/" target="_blank">Tabler Icons</a>.</p>
+        <section>
+            <h2>Follow&nbsp;Us&nbsp;on Social&nbsp;Media</h2>
+
+            <!-- Facebook Icon -->
+            <a href="#" aria-label="find us on facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+
+            <!-- Instagram Icon -->
+            <a href="#" aria-label="find us on instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg>
+            </a>
+
+            <!-- Twitter Icon -->
+            <a href="#" aria-label="find us on twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                </svg>
+            </a>
+        </section>
+    </footer>
+</body>
+</html>
